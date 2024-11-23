@@ -28,7 +28,7 @@ const todoSlice = createSlice ({
         updateTodo: (state , action)=>{
             console.log(action.payload);
             
-            state.todos.splice(action.payload.index , 1 , {
+            state.todos.splice(action.payload.index, 1 , {
                 title:action.payload.title
             })
            
